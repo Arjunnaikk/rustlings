@@ -12,8 +12,23 @@
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
+fn calculate_price_of_apples(num: i64) -> i64 {
+        if num > 40 { 
+            num
+        } else {
+            num*2
+        }
+    }
+
 fn main() {
     // You can optionally experiment here.
+    fn calculate_price_of_apples(num: i64) -> i64 {
+        if num > 40 { 
+            num
+        } else {
+            num * 2
+        }
+    }
 }
 
 // Don't change the tests!
@@ -28,4 +43,5 @@ mod tests {
         assert_eq!(calculate_price_of_apples(41), 41);
         assert_eq!(calculate_price_of_apples(65), 65);
     }
+
 }
